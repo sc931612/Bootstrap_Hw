@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fakedqyam</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/hw3.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="nav nav-tabs flex-column leftnav">
+            <li class="nav-item">
+                <a class="nav-link rounded-3 d-flex flex-column textTrans" aria-current="page" href="#">
+                    <i class="fa-solid fa-house d-block mt-1 mb-2 fs-6 text-dark"></i>
+                    首頁
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-3 d-flex flex-column textTrans" href="#">
+                    <i class="fa-solid fa-magnifying-glass d-block mt-1 mb-2 fs-6 text-dark"></i>
+                    搜尋
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-3 d-flex flex-column textTrans" href="#">
+                    <i class="fa-solid fa-bars-staggered d-block mt-1 mb-2 fs-6 text-dark"></i>
+                    列表
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-3 d-flex flex-column textTrans" href="#">
+                    <i class="fa-regular fa-compass d-block mt-1 mb-2 fs-6 text-dark"></i>
+                    導覽
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-3 d-flex flex-column textTrans" href="#">
+                    <i class="fa-solid fa-hand-holding-heart d-block mt-1 mb-2 fs-6 text-dark"></i>
+                    贊助
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header class="w-100 bg-info position-absolute top-0">
+        <div class="btn btn-outline-info position-absolute top-0 end-0 mt-4 me-4 py-0 fw-bold loginbtn">
+            <span>登入</span>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide h-100">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                    class="active pt-1 px-5 rounded-4 me-3" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2" class="pt-1 px-5 rounded-4 me-3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3" class="pt-1 px-5 rounded-4"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="vstack w50px position-absolute p-3 text-white h-100 blackgradient">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" viewBox="0 0 184 184"
+                        class="siteHeader__logo mb-1" data-v-40de0560="">
+                        <g transform="translate(4 4)">
+                            <circle cx="88" cy="88" r="88" fill="none" stroke="#00a2e4" stroke-width="8"></circle>
+                            <path
+                                d="M77.13 73.163a30.4 30.4 0 00-6.963-10.448 31.657 31.657 0 00-10.8-6.813 38.515 38.515 0 00-14.02-2.446h-25.75v66.118h25.75a38.815 38.815 0 0014.02-2.424 31.235 31.235 0 0010.8-6.813 30.6 30.6 0 006.963-10.471 37.23 37.23 0 000-26.7zM65.236 96.277a20.127 20.127 0 01-4.253 7.316 18.563 18.563 0 01-6.73 4.6 23.509 23.509 0 01-8.9 1.6H32.22V63.245h13.132a23.525 23.525 0 018.9 1.6 18.578 18.578 0 016.73 4.6 20.147 20.147 0 014.253 7.316 33.108 33.108 0 010 19.525zm35.821-19.525a20.633 20.633 0 014.276-7.339 18.431 18.431 0 016.73-4.618 25.562 25.562 0 0117.805 0 18.226 18.226 0 016.706 4.618 20.823 20.823 0 014.253 7.339 32.607 32.607 0 010 19.525 20.592 20.592 0 01-4.253 7.316 18.343 18.343 0 01-6.706 4.6 25.562 25.562 0 01-17.805 0 18.549 18.549 0 01-6.73-4.6 20.382 20.382 0 01-4.276-7.316 32.606 32.606 0 010-19.525zm40.471 37.472a30.229 30.229 0 005.748-5.19 31.489 31.489 0 004.275-6.47 34.189 34.189 0 002.687-7.568 39.185 39.185 0 00-.163-17.719 32.866 32.866 0 00-3.2-8.139 31.484 31.484 0 00-5.116-6.79 30.674 30.674 0 00-6.8-5.167 34.4 34.4 0 00-8.319-3.292 38.72 38.72 0 00-9.674-1.166 37.12 37.12 0 00-13.972 2.54A31.226 31.226 0 0089.189 73.05a37.845 37.845 0 000 26.932 31.226 31.226 0 0017.805 17.791 37.113 37.113 0 0013.973 2.538 41.116 41.116 0 005.211-.32 36.794 36.794 0 004.883-.96l9.908 10.7a7.913 7.913 0 003.295 2.195 12.858 12.858 0 004.042.595h10.375z"
+                                fill="#00a2e4" fill-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                    <div class="mEarth mt-2">地</div>
+                    <div class="mEarth">球</div>
+                    <div class="mEarth">圖</div>
+                    <div class="mEarth">輯</div>
+                    <div class="mEarth">隊</div>
+                </div>
+                <div class="carousel-item active h-100">
+                    <img src="./images/p1.avif" class="d-block h-100 w-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-2 fw-bold mb-5">
+                            「我是男生，我也會被性侵」亞洲美少年夢工廠傑尼斯的陰影面
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="./images/p3.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-2 fw-bold">
+                            FBI藝術犯罪小組告訴你：別相信從自家倉庫挖出稀世珍寶這種事
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="./images/p7.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-2 fw-bold">
+                            「突破次元壁！越前龍馬在舞台上打網球」在2.5次元的世界裡沒有不可能
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <div class="square bg-secondary rounded-3 d-flex align-items-center justify-content-center">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </div>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <div class="square bg-secondary rounded-3 d-flex align-items-center justify-content-center">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </div>
+
+            </button>
+        </div>
+    </header>
+    <section class="container-fluid position-absolute secPosition">
+        <div class="row row-cols-4 ms-5 gx-4 pe-1 gy-3">
+            <div class="col">
+                <div class="card bgTrans">
+                    <div class="ps-3 pe-2">
+                        <div class="rounded-2 overflow-hidden">
+                            <img src="./images/house.avif" class="card-img-top rounded-2 h50px cardHover" alt="...">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <a href="#" class="btn text-secondary rounded-1 me-2">netflex</a>
+                            <a href="#" class="btn text-secondary rounded-1 me-auto">卡車</a>
+                            <a href="#" data-bs-toggle="tooltip" title="查看更多標籤" class="me-2">
+                                <i class="fa-solid fa-tag"></i>
+                            </a>
+                        </div>
+                        <h5 class="card-title fw-bold">「親愛的，我把房子縮小了」流水線生產微型房屋</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="card-text me-auto">2023-04-10</div>
+                            <a href="#" data-bs-toggle="tooltip" title="收藏文章" class="me-2">
+                                <i class="fa-regular fa-bookmark text-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bgTrans">
+                    <div class="ps-3 pe-2">
+                        <div class="rounded-2 overflow-hidden">
+                            <img src="./images/house.avif" class="card-img-top rounded-2 h50px cardHover" alt="...">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <a href="#" class="btn text-secondary rounded-1 me-2">netflex</a>
+                            <a href="#" class="btn text-secondary rounded-1 me-auto">卡車</a>
+                            <a href="#" data-bs-toggle="tooltip" title="查看更多標籤" class="me-2">
+                                <i class="fa-solid fa-tag"></i>
+                            </a>
+                        </div>
+                        <h5 class="card-title fw-bold">「親愛的，我把房子縮小了」流水線生產微型房屋</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="card-text me-auto">2023-04-10</div>
+                            <a href="#" data-bs-toggle="tooltip" title="收藏文章" class="me-2">
+                                <i class="fa-regular fa-bookmark text-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bgTrans">
+                    <div class="ps-3 pe-2">
+                        <div class="rounded-2 overflow-hidden">
+                            <img src="./images/house.avif" class="card-img-top rounded-2 h50px cardHover" alt="...">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <a href="#" class="btn text-secondary rounded-1 me-2">netflex</a>
+                            <a href="#" class="btn text-secondary rounded-1 me-auto">卡車</a>
+                            <a href="#" data-bs-toggle="tooltip" title="查看更多標籤" class="me-2">
+                                <i class="fa-solid fa-tag"></i>
+                            </a>
+                        </div>
+                        <h5 class="card-title fw-bold">「親愛的，我把房子縮小了」流水線生產微型房屋</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="card-text me-auto">2023-04-10</div>
+                            <a href="#" data-bs-toggle="tooltip" title="收藏文章" class="me-2">
+                                <i class="fa-regular fa-bookmark text-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bgTrans">
+                    <div class="ps-3 pe-2">
+                        <div class="rounded-2 overflow-hidden">
+                            <img src="./images/house.avif" class="card-img-top rounded-2 h50px cardHover" alt="...">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <a href="#" class="btn text-secondary rounded-1 me-2">netflex</a>
+                            <a href="#" class="btn text-secondary rounded-1 me-auto">卡車</a>
+                            <a href="#" data-bs-toggle="tooltip" title="查看更多標籤" class="me-2">
+                                <i class="fa-solid fa-tag"></i>
+                            </a>
+                        </div>
+                        <h5 class="card-title fw-bold">「親愛的，我把房子縮小了」流水線生產微型房屋</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="card-text me-auto">2023-04-10</div>
+                            <a href="#" data-bs-toggle="tooltip" title="收藏文章" class="me-2">
+                                <i class="fa-regular fa-bookmark text-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bgTrans">
+                    <div class="ps-3 pe-2">
+                        <div class="rounded-2 overflow-hidden">
+                            <img src="./images/house.avif" class="card-img-top rounded-2 h50px cardHover" alt="...">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <a href="#" class="btn text-secondary rounded-1 me-2">netflex</a>
+                            <a href="#" class="btn text-secondary rounded-1 me-auto">卡車</a>
+                            <a href="#" data-bs-toggle="tooltip" title="查看更多標籤" class="me-2">
+                                <i class="fa-solid fa-tag"></i>
+                            </a>
+                        </div>
+                        <h5 class="card-title fw-bold">「親愛的，我把房子縮小了」流水線生產微型房屋</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="card-text me-auto">2023-04-10</div>
+                            <a href="#" data-bs-toggle="tooltip" title="收藏文章" class="me-2">
+                                <i class="fa-regular fa-bookmark text-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bgTrans">
+                    <div class="ps-3 pe-2">
+                        <div class="rounded-2 overflow-hidden">
+                            <img src="./images/house.avif" class="card-img-top rounded-2 h50px cardHover" alt="...">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <a href="#" class="btn text-secondary rounded-1 me-2">netflex</a>
+                            <a href="#" class="btn text-secondary rounded-1 me-auto">卡車</a>
+                            <a href="#" data-bs-toggle="tooltip" title="查看更多標籤" class="me-2">
+                                <i class="fa-solid fa-tag"></i>
+                            </a>
+                        </div>
+                        <h5 class="card-title fw-bold">「親愛的，我把房子縮小了」流水線生產微型房屋</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="card-text me-auto">2023-04-10</div>
+                            <a href="#" data-bs-toggle="tooltip" title="收藏文章" class="me-2">
+                                <i class="fa-regular fa-bookmark text-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bgTrans">
+                    <div class="ps-3 pe-2">
+                        <div class="rounded-2 overflow-hidden">
+                            <img src="./images/house.avif" class="card-img-top rounded-2 h50px cardHover" alt="...">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <a href="#" class="btn text-secondary rounded-1 me-2">netflex</a>
+                            <a href="#" class="btn text-secondary rounded-1 me-auto">卡車</a>
+                            <a href="#" data-bs-toggle="tooltip" title="查看更多標籤" class="me-2">
+                                <i class="fa-solid fa-tag"></i>
+                            </a>
+                        </div>
+                        <h5 class="card-title fw-bold">「親愛的，我把房子縮小了」流水線生產微型房屋</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="card-text me-auto">2023-04-10</div>
+                            <a href="#" data-bs-toggle="tooltip" title="收藏文章" class="me-2">
+                                <i class="fa-regular fa-bookmark text-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bgTrans">
+                    <div class="ps-3 pe-2">
+                        <div class="rounded-2 overflow-hidden">
+                            <img src="./images/house.avif" class="card-img-top rounded-2 h50px cardHover" alt="...">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <a href="#" class="btn text-secondary rounded-1 me-2">netflex</a>
+                            <a href="#" class="btn text-secondary rounded-1 me-auto">卡車</a>
+                            <a href="#" data-bs-toggle="tooltip" title="查看更多標籤" class="me-2">
+                                <i class="fa-solid fa-tag"></i>
+                            </a>
+                        </div>
+                        <h5 class="card-title fw-bold">「親愛的，我把房子縮小了」流水線生產微型房屋</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="card-text me-auto">2023-04-10</div>
+                            <a href="#" data-bs-toggle="tooltip" title="收藏文章" class="me-2">
+                                <i class="fa-regular fa-bookmark text-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
